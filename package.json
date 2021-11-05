@@ -1,0 +1,28 @@
+{
+  "name": "logmontire",
+  "version": "1.0.2",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron $NODE_DEBUG_OPTION .",
+    "package-macos": "electron-packager ./ Logmontire --darwin --out ../logmontire-build/Logmontire/Macos/Logmontire --app-version 1.1.2 --overwrite",
+    "package-windows": "electron-packager ./ Logmontire --windows --out ../logmontire-build/Logmontire/Windows/Logmontire --app-version 1.1.2 --overwrite",
+    "package-linux": "electron-packager ./ Logmontire --linux --out ../logmontire-build/Logmontire/Linux/Logmontire --app-version 1.1.2 --overwrite",
+    "package-all": "electron-packager ./ Logmontire --all --out ../logmontire-build/Logmontire/All/Logmontire --app-version 1.1.2 --overwrite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Kirill_Beldyaga@bitbucket.org/webdeviy/logmontire.git"
+  },
+  "author": "Kirill Beldyaga",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/webdeviy/logmontire#readme",
+  "dependencies": {
+    "amqplib": "^0.5.2",
+    "axios": "^0.18.0",
+    "electron": "^3.0.4",
+    "electron-packager": "^12.2.0",
+    "nodemon": "^1.18.4"
+  }
+}

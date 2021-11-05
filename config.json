@@ -1,0 +1,10 @@
+{
+  "rabbitmq": {
+    "local": "amqp://guest2:guest2@192.168.0.121:5672",
+    "url": "amqp://guest2:guest2@95.216.169.56:5672"
+  },
+  "log-service": {
+    "local": "http://192.168.0.121:3001",
+    "url": "http://95.216.169.56:3001"
+  }
+}
